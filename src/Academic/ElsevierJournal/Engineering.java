@@ -1,4 +1,4 @@
-package Academic.Elsevier;
+package Academic.ElsevierJournal;
 
 public class Engineering extends Elsevier{
     private Integer ID;
