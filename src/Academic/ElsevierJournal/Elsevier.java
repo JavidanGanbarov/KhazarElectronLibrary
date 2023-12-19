@@ -7,7 +7,10 @@ public abstract class Elsevier {
     public String parent = "RELX";
     public String website = "www.elsevier.com";
 
-
+    public void DataBase() {
+        System.out.println("Link of ScienceDirect:https://www.sciencedirect.com");
+    }
+    public abstract void papers_database_link();
 
 
 
