@@ -1,12 +1,22 @@
-package Academic.ElsevierJournal;
+package Academic.Elsevier;
 
 public class LifeScience extends Elsevier{
-    private Integer ID;
+    private String ID;
     private String Journal_Name;
     private String title;
     private String author;
+    
+    private String link;
 
-    public Integer getID() {
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+    public String getID() {
         return ID;
     }
 
@@ -34,10 +44,9 @@ public class LifeScience extends Elsevier{
         Journal_Name = journal_Name;
     }
 
-    public void setID(Integer ID) {
+    public void setID(String ID) {
         this.ID = ID;
     }
-
     @Override
     public void papers_database_link() {
         System.out.println("Life Sciences papers that at ScienceDirect link :https://www.sciencedirect.com/journal/life-sciences");

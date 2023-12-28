@@ -1,12 +1,24 @@
-package Academic.ElsevierJournal;
+package Academic.Elsevier;
+import java.util.Scanner;
 
 public class Engineering extends Elsevier {
-    private Integer ID;
+    Scanner sc = new Scanner(System.in);
+    private String ID;
     private String Journal_Name;
     private String title;
     private String author;
 
-    public Integer getID() {
+    private String link;
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+    public String getID() {
         return ID;
     }
 
@@ -22,7 +34,7 @@ public class Engineering extends Elsevier {
         return Journal_Name;
     }
 
-    public void setID(Integer ID) {
+    public void setID(String ID) {
         this.ID = ID;
     }
 

@@ -1,10 +1,12 @@
-package Academic.ElsevierJournal;
+package Academic.Elsevier;
 
 public class PhysicalScience extends Elsevier{
-    private Integer ID;
+    private String ID;
     private String Journal_Name;
     private String title;
     private String author;
+
+    private String link;
 
     public String getTitle() {
         return title;
@@ -30,14 +32,21 @@ public class PhysicalScience extends Elsevier{
         Journal_Name = journal_Name;
     }
 
-    public Integer getID() {
+    public String getID() {
         return ID;
     }
 
-    public void setID(Integer ID) {
+    public void setID(String ID) {
         this.ID = ID;
     }
 
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
 
     @Override
     public void papers_database_link() {
